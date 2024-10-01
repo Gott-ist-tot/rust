@@ -11,9 +11,10 @@ env:
 
 jobs:
   build:
-
-    runs-on: self-hosted
-
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: hello_world
     steps:
     - uses: actions/checkout@v4
     - name: Build
